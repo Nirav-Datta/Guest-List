@@ -2,7 +2,6 @@ var names_of_guests_array = [];
 function submit(){
     names_of_guests_array.push(document.getElementById(name_input).value);
     document.getElementById("l1").innerHTML=names_of_guests_array;
-    
 }
 function show(){
     var length_of_guests_array = names_of_guests_array.length;
@@ -28,4 +27,5 @@ function search(){
         }
     }
     document.getElementById("search_result").innerHTML = "name found"+found+"time/s";
+    console.log("name found" + found + "time/s")
 }
