@@ -1,7 +1,10 @@
 var names_of_guests_array = [];
-function submit(){
-    names_of_guests_array.push(document.getElementById(name_input).value);
+var name_of_guest;
+function submit1(){
+    name_of_guest = document.getElementById(name_input).value;
+    names_of_guests_array.push(name_of_guest);
     document.getElementById("l1").innerHTML=names_of_guests_array;
+    console.log(name_of_guest);
 }
 function show(){
     var length_of_guests_array = names_of_guests_array.length;
@@ -16,6 +19,7 @@ function show(){
 function sorting(){
     var sorted_list = remove_commas.sort();
     document.getElementById("sorted_list").innerHTML = sorted_list;
+    console.log("sorted list =" + sorted_list)
 }
 function search(){
     var search = document.getElementById("search_input").value;
